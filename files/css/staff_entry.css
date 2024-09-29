@@ -22,7 +22,7 @@
     border-width: 1px;
     border-color: #eee;
     border-style: solid;
-    width: 100%;
+    
     margin-bottom: 1.5em;
 }
 
@@ -40,4 +40,17 @@
 .individual-staff-member-data {
     float: left;
     overflow-wrap: normal;
+}
+
+
+.enrichment-container {
+    display: flex;
+    justify-content: space-between; /* Ensures there is space between the divs */
+    width: 100%; /* Ensure the container takes the full width */
+    
+}
+
+.enrichment-programs, .individual-staff-member {
+   width: 45%; /* Each div takes 45% of the container's width */  
+    text-align: left;
 }
