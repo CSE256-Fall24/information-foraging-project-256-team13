@@ -18,10 +18,6 @@ export class wunsCalendar {
             },
             events: [
                 {
-                    title: 'All Day Event',
-                    start: '2024-08-01',
-                },
-                {
                     title: '5:30 p.m. – Popsicles in the Park - Back to School',
                     start: '2024-08-28',
                 },
@@ -29,6 +25,12 @@ export class wunsCalendar {
                     title: 'Staff Orientation',
                     start: '2024-08-28',
                     end: '2024-08-30',
+                    color: 'red',
+                },
+                {
+                    title: 'Orientation for children',
+                    start: '2024-09-04',
+                    end: '2024-09-05',
                 }
             ],
         });
