@@ -17,6 +17,7 @@ export async function setupAll() {
     console.log('reloading');
     Slideshow.setupAll();
     Accordion.setupAll();
+    wunsCalendar.setupAll();
     PutStudentPageLoadOperationsInsideThisStudentBody();
     console.log('reloaded');
 }
