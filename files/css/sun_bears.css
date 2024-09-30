@@ -80,3 +80,9 @@ main li {
 #class-schedule td {
     border: 1px solid #ddd;
 }
+.children a:hover{
+    background-color: #a51417;
+    color: white;
+    
+    
+    }

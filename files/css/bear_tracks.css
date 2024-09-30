@@ -67,3 +67,9 @@
     padding-top: 8px;
     text-align: center;
 }
+.children a:hover{
+    background-color: #a51417;
+    color: white;
+    
+    
+    }
