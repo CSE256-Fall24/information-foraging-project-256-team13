@@ -24,3 +24,10 @@ main li {
 .classroom p {
     font-size: 1.15em;
 }
+
+.children a:hover{
+background-color: #a51417;
+color: white;
+
+
+}
