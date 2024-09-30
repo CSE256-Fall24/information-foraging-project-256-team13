@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="files/css/calendar.css">
@@ -16,6 +15,7 @@
   <ts-load data-name="header"></ts-load>
   <div class="image-container"></div>
   <div id="page-content">
+      <ts-load data-name="calendar"></ts-load>
     <main>
       <h1>Calendar</h1>
       <h2>
@@ -24,9 +24,12 @@
         <a class="download" href="downloads/2019-20-calendar.pdf" target="_blank">Download a printable version.</a>
       </h2>
       <br>
-      <p>*Denotes family/parent events</p>
+        <br>
+        <p>*Denotes family/parent events</p>
       <br>
-      <div class="calendar-session">
+        <div id='calendar-display'> </div>
+
+        <div class="calendar-session">
         <header>August, September</header>
         <div class="calendar-entry">
           <h3>August 28 (Wednesday)</h3>
@@ -97,7 +100,7 @@
           <h3>January 7 (Tuesday)</h3>
           <p>First day of school for 2020</p>
           <h3>January 20 (Monday)</h3>
-          <p>NO SCHOOL – Martin Luther King, Jr. Day</p>
+          <p>NO SCHOL – Martin Luther King, Jr. Day</p>
         </div>
       </div>
       <div class="calendar-session">
@@ -149,6 +152,7 @@
         </div>
       </div>
     </main>
+      <ts-load data-name="nested"> </ts-load>
   </div>
   <ts-load data-name="footer"></ts-load>
   <script src="scripts/js/app.js"></script>

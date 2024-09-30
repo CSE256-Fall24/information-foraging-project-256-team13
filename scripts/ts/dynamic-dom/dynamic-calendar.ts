@@ -1,8 +1,6 @@
 import { HTMLLoader } from '../core/utils/html_loader';
-import { Accordion } from './accordion';
 import { doSomething } from './do-something';
 import { HTMLContent, itemsToCache } from './html-imports';
-import { Slideshow } from './slideshow';
 import { wunsCalendar } from './calendar';
 
 // Put all function calls that need to be made on every page load inside the setupAll function body.
@@ -15,16 +13,9 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
 export async function setupAll() {
     await new Promise((r: any) => setTimeout(r, 100));
     console.log('reloading');
-    Slideshow.setupAll();
-    Accordion.setupAll();
     wunsCalendar.setupAll();
     PutStudentPageLoadOperationsInsideThisStudentBody();
     console.log('reloaded');
-}
-
-export async function calendarSetup() {
-    await new Promise((r: any) => setTimeout(r, 100));
-    wunsCalendar.setupAll();
 }
 
 (window as any).setupAll = setupAll;
@@ -34,6 +25,6 @@ itemsToCache.forEach((item: HTMLContent) => {
 });
 (window as any).HTMLLoader = HTMLLoader;
 
-console.log('dynamic-dom loaded');
+console.log('calendar loaded');
 // Do not touch this line, needed to reinitialize code in the dynamic-dom.ts setupAll function
 window.addEventListener('newPageLoad', () => setupAll());
