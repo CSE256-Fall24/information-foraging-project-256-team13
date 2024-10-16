@@ -16,12 +16,17 @@
   "author": "Riley McCuen",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.596.0"
+    "aws-sdk": "^2.596.0",
+    "fullcalendar": "^6.1.15"
   },
   "devDependencies": {
     "@types/node": "^13.1.1",
     "browser-sync": "^3.0.2",
     "browserify": "^16.5.0",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15",
+    "@fullcalendar/list": "^6.1.15",
     "concurrently": "^5.3.0",
     "prettier": "^2.2.1",
     "stringify": "^5.2.0",
