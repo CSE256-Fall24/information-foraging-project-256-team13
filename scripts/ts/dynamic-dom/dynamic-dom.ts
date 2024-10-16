@@ -4,14 +4,15 @@ import { doSomething } from './do-something';
 import { HTMLContent, itemsToCache } from './html-imports';
 import { Slideshow } from './slideshow';
 import { wunsCalendar } from './calendar';
-import { Sticky } from './sticky';
+import { setup } from './sticky';
 
 // Put all function calls that need to be made on every page load inside the setupAll function body.
 export function PutStudentPageLoadOperationsInsideThisStudentBody() {
     // TODO: Put all operations that you want to happen on ever page load in this function.
     // For example you could write: Sticky.setup()
+    setup();
+    console.log('setup');
     doSomething();
-    Sticky.setup();
 }
 
 export async function setupAll() {
