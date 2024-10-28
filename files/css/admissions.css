@@ -103,3 +103,7 @@ main li {
 .small{
   font-size: 20px;
 }
+
+.red{
+    color: #a51417!important;
+}
